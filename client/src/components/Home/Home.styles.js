@@ -38,10 +38,20 @@ export const Bottom = styled.div`
   width: 75vw;
   margin: 0px auto;
   margin-top: 50px;
+  margin-bottom: 100px;
 `;
 
 export const BottomTitle = styled.h1`
   color: #766cad;
 `;
 
-export const BottomSubTitle = styled.h3``;
+export const BottomContentWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+`;
+
+export const BottomSubTitle = styled.h2`
+  color: #766cad;
+`;
+
+export const BottomText = styled.p``;

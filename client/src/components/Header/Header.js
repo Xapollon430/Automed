@@ -4,6 +4,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 const navItems = ["Home", "Triage", "CPT"];
 
@@ -57,9 +58,11 @@ const Header = () => {
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#9F73D7" }}>
-                {item}
-              </Button>
+              <Link to={`/${item}`}>
+                <Button key={item} sx={{ color: "#9F73D7" }}>
+                  {item}
+                </Button>
+              </Link>
             ))}
           </Box>
         </Toolbar>
