@@ -1,6 +1,7 @@
 import * as S from "./Home.styles";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
+import PDF from "../../whitepaper.pdf";
 
 const StyledButton = ({ text }) => {
   console.log(text);
@@ -38,10 +39,13 @@ const Home = () => {
             <StyledButton text="Google Slide" />
           </a>
 
-          <StyledButton text="White Paper" />
+          <a href={PDF} target="_blank">
+            <StyledButton text="White Paper" />
+          </a>
 
-
-          <StyledButton text="Feedback Form" />
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdPv8svIpEfLF3d5npvEcLjqCoSD2MSeDysjREbYfaXqgn-Mw/viewform">
+            <StyledButton text="Feedback Form" />
+          </a>
         </S.Right>
       </S.Banner>
 
