@@ -11,7 +11,7 @@ export default function DrawerAppBar() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/triage" element={<Triage />} />
-        <Route path="/cpt" element={<Triage />} />
+        {/* <Route path="/cpt" element={<Triage />} /> */}
       </Routes>
     </>
   );
